@@ -8,8 +8,9 @@ $db = "edusogno_dbtask";
 $connessione = new mysqli ($host,$user,$pwd,$db);
 
 if($connessione) {
-   echo"sei connesso";
+   echo"sei connesso al db";
 }else{
-    echo 'Errore durante la registrazione di un nuovo account . ' . $connessione->error;
+    echo 'Errore connessione . ' . $connessione->error;
 }
 ?>
+

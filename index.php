@@ -26,7 +26,7 @@
                 </div>
                 <section>
                     <button type="submit">Login</button>
-                    <a href="../edusogno-esercizio/componenti/registrazione.php">Register</a>
+                    <a href="../edusogno-esercizio/componenti/newAccountRegistrazione.php">Register</a>
                 </section>
             </form>
         </main>
