@@ -1,3 +1,6 @@
+<?php include "database.php" ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +12,24 @@
 </head>
 
 <body>
-
+        <main>
+            <!--form per il login -->
+            <form action="login.php" method="post">
+                <h1>Login</h1>
+                <div>
+                    <label for="email">Inserisci Email:</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div>
+                    <label for="password">Inserisci Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <section>
+                    <button type="submit">Login</button>
+                    <a href="../edusogno-esercizio/componenti/registrazione.php">Register</a>
+                </section>
+            </form>
+        </main>
 </body>
 
 </html>
