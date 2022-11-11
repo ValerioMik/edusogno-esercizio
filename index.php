@@ -30,7 +30,7 @@
             <input type="password" name="password" id="password" required placeholder="iserisci password">
         </div>
         <input type="submit" value="Registrati">
-        <footer>Hai gia un account? <a href="login.php">Accedi</a></footer>
+        <footer>Hai gia un account? <a href="login.html">Accedi</a></footer>
     </form>
 </body>
 
