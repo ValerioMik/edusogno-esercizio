@@ -19,7 +19,7 @@
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['email'] = $row['email'];
 
-                header("location: areaprivata.php");
+                header("location: ../areaprivata.php");
             }else{
                 echo "la password non e corretta";
             }

@@ -11,7 +11,7 @@
 </head>
 
 <body >
-    <form action="./componenti/register.php" method="POST">
+    <form action="../edusogno-esercizio/componenti/register.php" method="POST">
         <h1>Crea il tuo Account</h1>
         <div>
             <label for="nome">Inserisci Nome:</label>
