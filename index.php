@@ -1,5 +1,3 @@
-<?php include "database.php" ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,28 +6,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Edusogno</title>
 </head>
 
-<body>
-        <main>
-            <!--form per il login -->
-            <form action="login.php" method="post">
-                <h1>Login</h1>
-                <div>
-                    <label for="email">Inserisci Email:</label>
-                    <input type="text" name="username" id="username">
-                </div>
-                <div>
-                    <label for="password">Inserisci Password:</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <section>
-                    <button type="submit">Login</button>
-                    <a href="../edusogno-esercizio/componenti/newAccountRegistrazione.php">Register</a>
-                </section>
-            </form>
-        </main>
+<body >
+    <form action="./componenti/register.php" method="POST">
+        <h1>Crea il tuo Account</h1>
+        <div>
+            <label for="nome">Inserisci Nome:</label>
+            <input type="text" name="nome" id="nome" required placeholder="Mario">
+        </div>
+        <div>
+            <label for="cognome">Inserisci Cognome:</label>
+            <input type="text" name="cognome" id="cognome" required placeholder="Rossi" >
+        </div>
+        <div>
+            <label for="email">Inserisci Email:</label>
+            <input type="email" name="email" id="email" required placeholder="nome@esempio.com">
+        </div>
+        <div>
+            <label for="password">Inserisci Password:</label>
+            <input type="password" name="password" id="password" required placeholder="iserisci password">
+        </div>
+        <input type="submit" value="Registrati">
+        <footer>Hai gia un account? <a href="login.php">Accedi</a></footer>
+    </form>
 </body>
 
 </html>

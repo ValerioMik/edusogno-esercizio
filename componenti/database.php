@@ -1,16 +1,14 @@
 <?php 
 
-$host = "127.0.0.1";
+$host = "localhost";
 $user = "root";
 $password = "root";
 $db = "edusogno_dbtask";
 
-$connessione = new mysqli ($host,$user,$pwd,$db);
+$connessione = new mysqli ($host,$user,$password,$db);
 
-if($connessione) {
-   echo"sei connesso al db";
-}else{
-    echo 'Errore connessione . ' . $connessione->error;
+if($connessione === false) {
+   die("errore durante la connessione". $connessione->connect_error);
 }
 ?>
 
